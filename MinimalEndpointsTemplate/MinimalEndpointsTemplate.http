@@ -1,0 +1,6 @@
+@MinimalEndpointsTemplate_HostAddress = http://localhost:5241
+
+GET {{MinimalEndpointsTemplate_HostAddress}}/weatherData/
+Accept: application/json
+
+###

@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalEndpointsTemplate", "MinimalEndpointsTemplate\MinimalEndpointsTemplate.csproj", "{31974FF9-7B47-4432-B194-171C7C7E3A91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31974FF9-7B47-4432-B194-171C7C7E3A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31974FF9-7B47-4432-B194-171C7C7E3A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31974FF9-7B47-4432-B194-171C7C7E3A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31974FF9-7B47-4432-B194-171C7C7E3A91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
