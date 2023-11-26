@@ -1,7 +1,11 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "José Marcelo Fernandes",
-  "classifications": ["Web","ASP.NET","MinimalApi"],
+  "author": "jmSfernandes",
+  "classifications": [
+    "Web",
+    "ASP.NET",
+    "MinimalApi"
+  ],
   "name": "Minimal Api Endpoints",
   "description": "A project for creating a server with minimal api and the endpoint definition approach.",
   "identity": "MinimalApi.App.1.0",
@@ -12,6 +16,12 @@
   },
   "sourceName": "MinimalEndpointsTemplate",
   "symbols": {
+    "DockerSupport": {
+      "type": "parameter",
+      "description": "Enables Docker Support",
+      "datatype": "bool",
+      "defaultValue": "true"
+    },
     "Framework": {
       "type": "parameter",
       "description": "The target framework for the project.",
@@ -23,27 +33,21 @@
       ],
       "defaultValue": "net8.0",
       "replaces": "net8.0"
-    },
-    "DockerSupport": {
-      "type": "parameter",
-      "description": "Enables Docker Support",
-      "datatype": "bool",
-      "defaultValue": "true"
     }
-  }, "sources": [
-  {
-    
-    "modifiers": [
-      {
-        "condition": "(!DockerSupport)",
-        "exclude": [
-          "docker-compose.yml",
-          "Dockerfile",
-          ".dockerignore",
-          "CustomTemplate.csproj.user"
-        ]
-      }
-    ]
-  }
-]
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "(!DockerSupport)",
+          "exclude": [
+            "docker-compose.yml",
+            "Dockerfile",
+            ".dockerignore",
+            "CustomTemplate.csproj.user"
+          ]
+        }
+      ]
+    }
+  ]
 }
